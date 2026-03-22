@@ -335,9 +335,12 @@
       color: var(--gray-dim);
     }
 
-    @media (max-width: 480px) {
-      .hero { padding-top: 3rem; }
-      .form-wrap { padding: 1.5rem; }
+    @media (max-width: 640px) {
+      .hero { padding-top: 2.5rem; padding-bottom: 1.5rem; }
+      .hero h1 { font-size: 2rem; }
+      .hero-sub { font-size: 1.05rem; }
+      .form-wrap { padding: 1.25rem; }
+      .page > div[style*="max-width:560px"] { font-size: 1rem; }
     }
   </style>
 </head>
@@ -360,7 +363,7 @@
     </div>
 
     <!-- BULLETS -->
-    <div style="max-width:560px;width:calc(100% - 2rem);margin:0 auto 1.5rem;display:flex;flex-direction:column;gap:0.6rem;">
+    <div style="max-width:560px;width:calc(100% - 2rem);margin:0 auto 1.5rem;display:flex;flex-direction:column;gap:0.75rem;">
       <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.88rem;color:rgba(255,255,255,0.65);">
         <span style="width:5px;height:5px;border-radius:50%;background:var(--blue);flex-shrink:0;"></span>
         Levels based off points
@@ -380,7 +383,7 @@
     </div>
 
     <!-- TALLY FORM -->
-    <div class="form-wrap" style="max-width:560px;width:calc(100% - 2rem);margin:0 auto;">
+    <div class="form-wrap" style="max-width:560px;width:calc(100% - 2rem);margin:0 auto;margin-bottom:4rem;">
       <iframe data-tally-src="https://tally.so/embed/yPDOlX?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="528" frameborder="0" marginheight="0" marginwidth="0" title="Ascension Waitlist"></iframe>
       <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
     </div>
